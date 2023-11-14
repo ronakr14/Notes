@@ -28,7 +28,7 @@ git config --global --remove-section user.email
 Command:
 ```git config --global user.useConfigOnly true```
 
-## Use Repository Identity
+## Repository Settings
 Following command should be executed in repository itself.
 
 Syntax:
