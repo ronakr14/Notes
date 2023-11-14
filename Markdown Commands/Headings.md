@@ -1,6 +1,13 @@
-# Notes
+To create a heading, add one to six ```#``` symbols before your heading text. The number of ```#``` you use will determine the hierarchy level and typeface size of the heading.
 
-## download_multipe_git_repos
-Command to download multiple repositories from github:
-<br>
-  GHUSER=ronakr14; curl "https://api.github.com/users/$GHUSER/repos?per_page=1000" | grep -w clone_url | grep -o '[^"]\+://.\+.git' | xargs -L1 git clone
+# A first-level heading
+
+## A second-level heading
+
+### A third-level heading
+
+#### A fourth-level heading
+
+##### A fifth-level heading
+
+###### A sixth-level heading
