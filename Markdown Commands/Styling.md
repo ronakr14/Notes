@@ -60,3 +60,7 @@ Example:
 # Horizontal Rule
 
 Syntax: `---` or `***` or `___`
+
+# Underline
+
+Syntax: `<ins><text></ins>`
