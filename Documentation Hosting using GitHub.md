@@ -20,7 +20,6 @@
 
     mkdocs serve
 
-<<<<<<< HEAD
 6. Create .github\workflows\ci.yml file in the folder. Content od ci.yml can be found on github documentation.
 
 7. Push all files on github repository, everything will be taken care by github.
@@ -28,6 +27,3 @@
 8. Documentation website will be online at : `https://<github_username>.github.io/<repository_name>/`
 eg.
     https://ronakr14.github.io/Documentation/
-=======
-6. 
->>>>>>> 19d6c65dbe4469f48c7bbb725de1e0b53ddaf808
