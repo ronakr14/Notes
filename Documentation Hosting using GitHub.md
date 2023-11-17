@@ -20,7 +20,7 @@
 
     mkdocs serve
 
-6. Create .github\workflows\ci.yml file in the folder. Content od ci.yml can be found on github documentation.
+6. Create .github\workflows\ci.yml file in the folder. Content of ci.yml can be found on github documentation.
 
 7. Push all files on github repository, everything will be taken care by github.
 
