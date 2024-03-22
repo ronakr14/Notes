@@ -1,0 +1,81 @@
+site_name: Notes
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: black
+      accent: white 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: black
+      accent: white
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Homepage: index.md 
+  - Git: 
+      - Git Notes: git/index.md
+      - Config Setup: git/config.md
+      - Git Snippets: git/git_snippets.md
+  - Markdown: 
+      - Markdown Notes: markdown/index.md
+      - Headings: markdown/Headings.md
+      - Styling: markdown/Styling.md
+      - Quotes: markdown/Quoting.md
+      - Links: markdown/Links.md
+      - Lists: markdown/Lists.md
+      - Images: markdown/Images.md
+      - Tables: markdown/Tables.md
+      - Comments: markdown/Comments.md
+  - Python: 
+      - Python Notes: python/index.md
+      - Documentation Hosting: python/documentation hosting.md
+      - Create and Publish Library: python/create and publish library/index.md
+      - Libraries: python/libraries/index.md
+  - Artificial Intelligence: 
+      - Artificial Intelligence Notes: artificial intelligence/index.md
+      - Machine Learning: artificial intelligence/machinelearning.md
+      - Deep Learning: artificial intelligence/deeplearning.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/ronakr14
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      
+copyright: |
+  &copy; 2024 <a href="https://github.com/ronakr14"  target="_blank" rel="noopener">Ronak Rathore</a>
