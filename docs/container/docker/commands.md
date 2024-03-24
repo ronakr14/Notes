@@ -142,6 +142,10 @@ disconnect a container from a network
 
     docker network disconnect <network name> <container name/ id>
 
+inspect a network
+
+    docker network inspect <network name>
+
 ---
 # Logs and Debugging
 
@@ -156,6 +160,10 @@ start an interactive shell in a running container
 display real-time container resource usage.
 
     docker stats <container name/ id>
+
+get results from container
+
+    docker exec <conainer name/ id> <command to execute>
 
 ---
 # Cleanup
