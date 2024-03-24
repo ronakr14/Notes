@@ -2,5 +2,6 @@
 
 ## Contents
 
-1. [Config Setup](config.md)
-2. [Git Code Snippets](git_snippets.md)
+1. [Commands](commands.md)
+2. [Config Setup](config.md)
+3. [Git Code Snippets](git_snippets.md)

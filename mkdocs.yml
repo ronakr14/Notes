@@ -30,30 +30,15 @@ plugins:
   - mkdocstrings
 
 nav:
-  - Homepage: index.md 
-  - Git: 
-      - Git Notes: git/index.md
-      - Config Setup: git/config.md
-      - Git Snippets: git/git_snippets.md
-  - Markdown: 
-      - Markdown Notes: markdown/index.md
-      - Headings: markdown/Headings.md
-      - Styling: markdown/Styling.md
-      - Quotes: markdown/Quoting.md
-      - Links: markdown/Links.md
-      - Lists: markdown/Lists.md
-      - Images: markdown/Images.md
-      - Tables: markdown/Tables.md
-      - Comments: markdown/Comments.md
-  - Python: 
-      - Python Notes: python/index.md
-      - Documentation Hosting: python/documentation hosting.md
-      - Create and Publish Library: python/create and publish library/index.md
-      - Libraries: python/libraries/index.md
-  - Artificial Intelligence: 
-      - Artificial Intelligence Notes: artificial intelligence/index.md
-      - Machine Learning: artificial intelligence/machinelearning.md
-      - Deep Learning: artificial intelligence/deeplearning.md
+  - Home: index.md 
+  - Git: git/index.md
+  - Markdown: markdown/index.md
+  - Python: python/index.md
+  - Artificial Intelligence: artificial intelligence/index.md
+  - Container: container/index.md
+  - SQL: SQL/index.md
+  - Linux: linux/index.md
+  - API: api/index.md
 
 extra:
   social:

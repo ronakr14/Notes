@@ -19,6 +19,13 @@ git config --global user.name "Your Name"
 git config --global user.email mail@example.com
 ```
 
+### Set VSCode as Git Default editor
+```git config --global core.editor "code --wait"```
+
+### Set your file compatible for windows and linux.(for windows user)
+```git config --global core.autocrlf true```
+```git config --global core.autocrlf input```
+
 ## Repository Settings
 These settings are applied to the git repository.
 
