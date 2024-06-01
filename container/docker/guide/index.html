@@ -16,7 +16,7 @@
     
     
       
-        <title>Docker Basics - Notes</title>
+        <title>Docker Daemon - Notes</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-basics" class="md-skip">
+        <a href="#docker-daemon" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker Basics
+              Docker Daemon
             
           </span>
         </div>
@@ -540,143 +540,14 @@
                   
 
 
-<h1 id="docker-basics">Docker Basics</h1>
-<p>check docker version</p>
-<div class="highlight"><pre><span></span><code>docker --version or docker -v
-</code></pre></div>
-<p>display system wide information about docker</p>
-<div class="highlight"><pre><span></span><code>docker info
-</code></pre></div>
-<p>download an image from Docker Hub</p>
-<div class="highlight"><pre><span></span><code>docker pull &lt;image name&gt;
-</code></pre></div>
-<p>list local docker images</p>
-<div class="highlight"><pre><span></span><code>docker images or docker image ls
-</code></pre></div>
-<p>list running containers</p>
-<div class="highlight"><pre><span></span><code>docker ps or docker container ls
-</code></pre></div>
-<p>list all containers including stopped ones</p>
-<div class="highlight"><pre><span></span><code>docker ps -a or docker container ls -a
-</code></pre></div>
-<p>create and start a new container from an image</p>
-<div class="highlight"><pre><span></span><code>docker run &lt;options&gt; &lt;image name&gt;
-</code></pre></div>
-<hr />
-<h1 id="docker-container-lifecycle">Docker Container Lifecycle</h1>
-<p>start a stopped container</p>
-<div class="highlight"><pre><span></span><code>docker start &lt;container name/ id&gt;
-</code></pre></div>
-<p>stop a running container gracefully</p>
-<div class="highlight"><pre><span></span><code>docker stop &lt;container name/ id&gt;
-</code></pre></div>
-<p>forcefully stop a running container</p>
-<div class="highlight"><pre><span></span><code>docker kill &lt;container name/ id&gt;
-</code></pre></div>
-<p>restart a container</p>
-<div class="highlight"><pre><span></span><code>docker restart &lt;container name/ id&gt;
-</code></pre></div>
-<p>remove a stopped container</p>
-<div class="highlight"><pre><span></span><code>docker rm &lt;container name/ id&gt;
-</code></pre></div>
-<hr />
-<h1 id="images">Images</h1>
-<p>Build a Docker image from a dockerfile</p>
-<div class="highlight"><pre><span></span><code>docker build -t &lt;image name&gt; &lt;path to dockerfile&gt;
-</code></pre></div>
-<p>remove an image</p>
-<div class="highlight"><pre><span></span><code>docker rmi &lt;image name&gt;
-</code></pre></div>
-<p>remove all unused images</p>
-<div class="highlight"><pre><span></span><code>docker image prune
-</code></pre></div>
-<hr />
-<h1 id="docker-compose">docker compose</h1>
-<p>start services defined in a docker compose file</p>
-<div class="highlight"><pre><span></span><code>docker-compose up
-</code></pre></div>
-<p>stop and remove services defined in a docker compose file</p>
-<div class="highlight"><pre><span></span><code>docker-compose down
-</code></pre></div>
-<p>list services in a compose file and their status</p>
-<div class="highlight"><pre><span></span><code>docker-compose ps
-</code></pre></div>
-<p>view logs for a specific service</p>
-<div class="highlight"><pre><span></span><code>docker-compose logs &lt;service_name&gt;
-</code></pre></div>
-<p>run a command in a running service container</p>
-<div class="highlight"><pre><span></span><code>docker-compose exec &lt;service_name&gt; &lt;command&gt;
-</code></pre></div>
-<hr />
-<h1 id="volumes">Volumes</h1>
-<p>create a named volume</p>
-<div class="highlight"><pre><span></span><code>docker volume create &lt;volume name&gt;
-</code></pre></div>
-<p>mount a volume to a container</p>
-<div class="highlight"><pre><span></span><code>docker run -v &lt;volumn name&gt;:&lt;container path&gt;
-</code></pre></div>
-<p>list volumes</p>
-<div class="highlight"><pre><span></span><code>docker volume ls
-</code></pre></div>
-<p>remove a volume</p>
-<div class="highlight"><pre><span></span><code>docker volume rm &lt;volumn name&gt;
-</code></pre></div>
-<hr />
-<h1 id="docker-registry-and-hub">Docker Registry and Hub</h1>
-<p>login to docker registry</p>
-<div class="highlight"><pre><span></span><code>docker login
-</code></pre></div>
-<p>push an image to the registry</p>
-<div class="highlight"><pre><span></span><code>docker push &lt;image name&gt;
-</code></pre></div>
-<p>pull an image from the registry</p>
-<div class="highlight"><pre><span></span><code>docker pull &lt;image name&gt;
-</code></pre></div>
-<hr />
-<h1 id="networks">Networks</h1>
-<p>create a user-defined network</p>
-<div class="highlight"><pre><span></span><code>docker network create &lt;network name&gt;
-</code></pre></div>
-<p>list networks</p>
-<div class="highlight"><pre><span></span><code>docker network ls
-</code></pre></div>
-<p>connect a container to a network</p>
-<div class="highlight"><pre><span></span><code>docker network connect &lt;network name&gt; &lt;container name/ id&gt;
-</code></pre></div>
-<p>disconnect a container from a network</p>
-<div class="highlight"><pre><span></span><code>docker network disconnect &lt;network name&gt; &lt;container name/ id&gt;
-</code></pre></div>
-<p>inspect a network</p>
-<div class="highlight"><pre><span></span><code>docker network inspect &lt;network name&gt;
-</code></pre></div>
-<hr />
-<h1 id="logs-and-debugging">Logs and Debugging</h1>
-<p>view container logs</p>
-<div class="highlight"><pre><span></span><code>docker logs &lt;container name/ id&gt;
-</code></pre></div>
-<p>start an interactive shell in a running container</p>
-<div class="highlight"><pre><span></span><code>docker exec -it &lt;container name/ id&gt;
-</code></pre></div>
-<p>display real-time container resource usage.</p>
-<div class="highlight"><pre><span></span><code>docker stats &lt;container name/ id&gt;
-</code></pre></div>
-<p>get results from container</p>
-<div class="highlight"><pre><span></span><code>docker exec &lt;conainer name/ id&gt; &lt;command to execute&gt;
-</code></pre></div>
-<hr />
-<h1 id="cleanup">Cleanup</h1>
-<p>remove all stopped containers, unused networks, and images</p>
-<div class="highlight"><pre><span></span><code>docker system prune
-</code></pre></div>
-<p>remove all stopped containers</p>
-<div class="highlight"><pre><span></span><code>docker container prune
-</code></pre></div>
-<p>remove all unused images</p>
-<div class="highlight"><pre><span></span><code>docker image prune
-</code></pre></div>
-<p>remove all unused volumes</p>
-<div class="highlight"><pre><span></span><code>docker volumn prune
-</code></pre></div>
+<h1 id="docker-daemon">Docker Daemon</h1>
+<ul>
+<li>Resposnsible for all docker process.</li>
+</ul>
+<h1 id="docker-desktop">Docker Desktop</h1>
+<ul>
+<li>GUI for Docker.</li>
+</ul>
 
 
 
