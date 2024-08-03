@@ -31,15 +31,15 @@ plugins:
 
 nav:
   - Home: index.md 
-  - Git: git/index.md
-  - Markdown: markdown/index.md
-  - Python: python/index.md
-  - Artificial Intelligence: artificial intelligence/index.md
+  - Artificial Intelligence: artificial_intelligence/index.md
+  - Languages: languages/index.md
+  - Database and Data Warehouse: database_datawarehouse/index.md
   - Container: container/index.md
-  - SQL: SQL/index.md
-  - Linux: linux/index.md
+  - Version Control Systems: version_control/index.md
+  - Projects: projects/index.md
   - API: api/index.md
-  - Website Builder: website builder/index.md
+  - Operating Systems: operating_systems/index.md
+  - Cloud Technologies: cloud_technologies/index.md
 
 extra:
   social:
