@@ -23,5 +23,3 @@
 19. [Dataclass](getting_started/dataclass.md)
 20. [Metaclass](getting_started/metaclass.md)
 21. [Regular Expression](getting_started/regexp.md)
-7. [Libraries Guide](libraries/index.md)
-8. [Framework Guide](framework/index.md)
