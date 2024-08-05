@@ -23,3 +23,42 @@
 19. [Dataclass](getting_started/dataclass.md)
 20. [Metaclass](getting_started/metaclass.md)
 21. [Regular Expression](getting_started/regexp.md)
+22. [Copy](getting_started/copy.md)
+23. [Exception Handling](getting_started/exception_handling.md)
+24. [Context Manager](getting_started/context_managers.md)
+25. [Command Line Arguments](getting_started/commandline_arguments.md)
+26. [Packages](getting_started/packages.md)
+27. [Type Hints](getting_started/type_hints.md)
+28. [Importance of Setup.py](getting_started/setup.md)
+29. [Object Oriented Programming](getting_started/oops.md)
+30. [Exec vs Eval](exec_eval.md)
+31. [Args vs Kwargs](args_kwargs.md)
+32. [Garbage Collection](grabage.md)
+33. [Multiprocessing](multiprocessing.md)
+34. [Multiprocess Pool](multiprocesspool.md)
+35. [Multithreading](multithreading.md)
+36. [Concurrency](concurrency.md)
+37. [Global Interpreter Lock](gil.md)
+38. [Parallel Computation](parallel_computation.md)
+39. [Sockets](sockets.md)
+40. [Web Sockets](websockets.md)
+41. [Networking](networking.md)
+42. [Descriptors](descriptors.md)
+43. [Temporary File](tempfile.md)
+44. [ZipFile and TarFile](zip_tar.md)
+45. [ALternativs to Switch Statement](switch.md)
+46. [Byte Code vs Source Code](byte_source.md)
+47. [Abstract Base Class](abstractclass.md)
+48. [Immutable vs Mutable Datatypes](mutable_immutable.md)
+49. [Templates](templates.md)
+50. [Python Persistence](persistence.md)
+51. [Virtual Environments](venv.md)
+52. [Audio processing with Pyglet]
+53. [Python with C#]
+54. [Extensions with Python]
+55. [Unit Testing]
+56. [Profiling]
+57. [Performance Optimization]
+58. [Security and Cryptography]
+59. [Shell Connection with Python]
+60. 
